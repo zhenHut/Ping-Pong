@@ -21,7 +21,7 @@ player_1 = Player(220, 20, 250, 0)
 player_2 = Player(220, game.get_screen_width() - (2*20), 250, 0)
 
 item1 = Shrimp()
-
+# test
 # Spieler zur Spieler-Sprite-Gruppe hinzufügen
 #player_sprites.add(player_1)
 #player_sprites.add(player_2)
