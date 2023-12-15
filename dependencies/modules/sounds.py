@@ -5,8 +5,8 @@ import pygame
 class Sound:
     def __init__(self):
         #super().__init__()
-        self.soundeffekte = pygame.mixer.Sound('../Explosion.wav')
-        self.spielmusik = pygame.mixer.music.load('../ImYours.mp3'), pygame.mixer.music.play(-1, 0.0)
+        self.soundeffekte = pygame.mixer.Sound('./dependencies/assets/sounds/Explosion.wav')
+        self.spielmusik = pygame.mixer.music.load('./dependencies/assets/sounds/ImYours.mp3'), pygame.mixer.music.play(-1, 0.0)
         self.lautstaerke = pygame.mixer_music.set_volume(.6)
 
     # getter und setter

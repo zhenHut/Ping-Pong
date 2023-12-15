@@ -1,7 +1,7 @@
 import pygame
 
-from sounds import Sound
-from farben import Farben
+from dependencies.modules.sounds import Sound
+from dependencies.modules.farben import Farben
 # pygame initialiesieren
 pygame.init()
 
@@ -15,7 +15,7 @@ screen_height = 600
 #scorefield_height = 100
 #scorefield_width = 1000
 # Spielfeld
-gamefield_image = pygame.image.load("hintergrund.jpg")
+gamefield_image = pygame.image.load("./dependencies/assets/images/hintergrund.jpg")
 gamefield_width = 1000
 gamefield_height = 500
 gamefield_scaled = pygame.transform.scale(gamefield_image, (gamefield_width, gamefield_height))
@@ -67,7 +67,7 @@ class Shrimp(Items):
         super().__init__()
         self.item_x = 500
         self.item_y = 300
-        self.item_image = pygame.image.load('Shrimp.png').convert_alpha()
+        self.item_image = pygame.image.load('./dependencies/assets/images/Shrimp.png').convert_alpha()
 
     def item_draw(self, screen, x, y):
         item_image = pygame.transform.scale(self.item_image, (50, 20))
@@ -79,7 +79,7 @@ class Shrimp(Items):
 item1 = Shrimp()
 
 # item
-item_image = pygame.image.load('Shrimp.png').convert_alpha()
+item_image = pygame.image.load('./dependencies/assets/images/Shrimp.png').convert_alpha()
 
 # item position
 item_x = 500
